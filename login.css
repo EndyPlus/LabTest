@@ -1,0 +1,35 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.main-content {
+    margin-top: 100px;
+}
+
+.form-signin {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+.btn-primary:hover {
+    background-color: #3071a9;
+    border-color: #3071a9;
+}
+
+.btn-dark {
+    background-color: #333333;
+    border-color: #333333;
+    color: #ffffff;
+}
+
+.btn-dark:hover {
+    background-color: #222222;
+    border-color: #222222;
+}

@@ -155,18 +155,33 @@
                 </p>
               </li>
               <li>
-                <form id="subscription_form" action="" class="form_sub">
+                <form
+                  method="POST"
+                  id="subscription_form"
+                  action=""
+                  class="form_sub"
+                >
                   <h2>Subscribe on our updates!</h2>
                   <div class="input-block">
                     <div class="sub-inputs">
-                      <input type="text" name="Name" class="sub-input input1" />
                       <input
+                        id="emailInput"
+                        required
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        class="sub-input input1"
+                      />
+                      <input
+                        id="nameInput"
+                        required
                         type="email"
                         name="email"
+                        placeholder="Email"
                         class="sub-input input2"
                       />
                     </div>
-                    <button class="input-btn">Subscribe</button>
+                    <button type="submit" class="input-btn">Subscribe</button>
                   </div>
                 </form>
               </li>
