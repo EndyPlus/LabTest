@@ -10,9 +10,10 @@
     />
     <link rel="stylesheet" href="aboutme.css" />
   </head>
+
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-purple">
         <div class="container">
           <a class="navbar-brand" href="#">Моя візитка.</a>
           <button
@@ -51,7 +52,11 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <img src="img/avatar.jpg" alt="Me" class="rounded-image" />
+              <img
+                src="img/avatar.jpg"
+                alt="Me"
+                class="rounded-image img-fluid"
+              />
             </div>
             <div class="col-md-6">
               <h2 class="text-purple">Про мене</h2>
@@ -68,22 +73,54 @@
       <section id="portfolio" class="py-5 bg-light">
         <div class="container">
           <h2 class="text-purple text-center mb-5">Портфоліо</h2>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="portfolio-item">
-                <img src="img/1.png" alt="Портфоліо 1" />
+          <div
+            id="portfolio-carousel"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="false"
+            data-wrap="true"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="img/1.png" alt="Портфоліо 1" class="img-fluid" />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="img/2.png" alt="Портфоліо 2" class="img-fluid" />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img src="img/3.png" alt="Портфоліо 3" class="img-fluid" />
+                </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="portfolio-item">
-                <img src="img/2.png" alt="Портфоліо 2" />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="portfolio-item">
-                <img src="img/3.png" alt="Портфоліо 3" />
-              </div>
-            </div>
+            <a
+              class="carousel-control-prev"
+              href="#portfolio-carousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#portfolio-carousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </section>
@@ -96,7 +133,7 @@
               <h3 class="text-purple">Мови програмування:</h3>
               <ul class="skills-list">
                 <li>JavaScript</li>
-                <li>TypeScipt</li>
+                <li>TypeScript</li>
               </ul>
             </div>
             <div class="col-md-6 text-center">
@@ -150,14 +187,14 @@
       </section>
     </main>
 
-    <footer>
-      <div class="container text-center">
-        <p>&copy; 2023 Моя візитка. | Усі права захищені.</p>
+    <footer class="text-center py-3">
+      <div class="container">
+        <p>Всі права захищено &copy; 2023</p>
       </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
