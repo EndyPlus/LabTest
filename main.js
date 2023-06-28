@@ -1,8 +1,6 @@
 console.log(jQuery().jquery);
 //цей скрипт для меню «бургера»
-$(document).on('click', '#burger', function () {
- $('.header-nav').toggleClass('active');
-});
+alert("szds")
 // Submit subscription form using Ajax
 $('#subscription_form').on('submit', function (e) {
  e.preventDefault();
